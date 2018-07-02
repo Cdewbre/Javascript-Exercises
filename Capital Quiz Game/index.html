@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="A game to check your knowledge of capital cities worldwide">
+  <meta name="author" content="charlenedewbre">
+  
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel='stylesheet' href="vendors/css/grid.css" type='text/css'> 
+
+  <title>Capital Quiz Game</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Quicksand:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+           <div class="row">
+            <ul class="nav-items">
+                <li><a href="?">Start Game</a></li>
+                <li><a href="#">Other Games</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            </div>    
+        </nav>
+           <div class="row splash-area">
+                <h1 class="splash"><span class="rotate-text">Welcome</span>to Capital Quiz</h1>
+                <p class="tagline">How well do you know the capital cities of the world?</p>
+                <button class="center-button" id="try-btn" type="button" onclick="init()">Try the Quiz!</button>   
+            </div>
+        <div class="question-display">
+            <div class="row">
+                <div class="col-2-of-2 question-box">
+                    <p class="question-style" id="my-question"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2 answer-box clearfix">
+                    <form name="useranswers" id="my-answers"> </form>
+                    <button class="center-button" id="retry-btn" type="button" onclick="init()">Try Again?</button>
+                 </div>
+                <div class="col-1-of-2 score-box clearfix">
+                    <p>Your Score:</p>
+                    <p class="score-num" id="score-display">0</p> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2 actions">
+                  <button id="answer-btn" onclick="getAnswer()">Check Your Answer</button>  
+                </div>
+                <div class="col-1-of-2 next-question">
+                   <button id="next-btn" onclick="getQuestion()">Get A Question</button> 
+                </div>
+             </div>
+        
+        </div> 
+    </header>
+
+    <section id="about" class="about">
+        <div class="row">
+            <div class="about-container">
+            <h2>About This Game</h2>
+            <p>Capital Quiz is the result of a coding challenge presented in Jonas Schmedtmann's <a href="https://www.udemy.com/the-complete-javascript-course/learn/v4/overview" target="_blank">Udemy class on Javascript</a>.</p>
+            <p>While the challege asked students to create a mini-quiz game that played in a browser development console, I wanted to apply everything we'd learned so far to make a browser-based game.</p>
+            <h2>About The Developer</h2>
+            <p>My name is Charlene Dewbre, and you can find out more about me on <a href="http://www.charlenedewbre.com" target="_blank">my portofolio page!</a></p>
+        
+        </div>
+      </div>
+    </section>
+    
+  <script type="text/javascript" src="resources/js/script.js"></script>    
+</body>
+
+</html>
